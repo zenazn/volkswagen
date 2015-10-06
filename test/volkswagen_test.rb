@@ -1,6 +1,4 @@
-require 'minitest/spec'
-require 'minitest/autorun'
-require 'volkswagen'
+require_relative '_lib'
 
 describe Volkswagen do
   it 'detects a fake CI environment' do
