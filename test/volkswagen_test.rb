@@ -23,5 +23,10 @@ describe Volkswagen do
       add_environment_variable('TRAVIS', 'yes')
       assert(Volkswagen.ci?)
     end
+
+    it 'detects CircleCI' do
+      add_environment_variable('CIRCLECI', 'yes')
+      assert(Volkswagen.ci?)
+    end
   end
 end
